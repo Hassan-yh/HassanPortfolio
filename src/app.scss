@@ -1,0 +1,18 @@
+.app{
+    padding: 0px 100px;
+    scroll-behavior: smooth;
+}
+
+
+@media(max-width: 900px){
+    .app{
+        padding: 50px 4rem;
+    }
+}
+
+
+@media(max-width: 600px){
+    .app{
+        padding: 50px 40px;
+    }
+}

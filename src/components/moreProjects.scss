@@ -1,0 +1,77 @@
+@use "../index.scss";
+
+
+// $secondary-background: #112240;
+// $green-text: #4abba8;
+// $background-color: #0a192f;
+// $webkit-text-fill-color: #8892b0;
+// $text-color: #ccd6f6;
+// $text-size: 1rem;
+// $text-line-height: 30px;
+
+// $secondary-background: #c29776;
+$secondary-background: rgb(219, 199, 184);
+$background-color: #FFF6E0;
+$green-text: #E15549;
+$webkit-text-fill-color: #482307;
+$text-color: #5C340F;
+$text-size: 1rem;
+$text-line-height: 30px;
+
+.more-Projects{
+    width: 100%;
+    padding: 2rem;
+    background-color: $secondary-background;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    transition: all .5s;
+}
+
+.scale-up{
+    transform: scale(1);
+}
+
+.more-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.more-icon{
+    color: $green-text;
+    font-size: 3rem;
+}
+
+.iconics{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.more-iconics{
+    font-size: 1.5rem;
+    color: $webkit-text-fill-color;
+}
+
+.more-iconics:hover{
+    color: $green-text;
+}
+
+.more-title{
+    color: $text-color;
+    margin-bottom: 1rem;
+}
+
+.more-p{
+    color: $webkit-text-fill-color;
+    line-height: $text-line-height;
+}
+
+.tools{
+    color: $webkit-text-fill-color;
+    line-height: $text-line-height;
+    margin-top: auto;
+}

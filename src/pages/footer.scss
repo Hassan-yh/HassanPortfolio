@@ -1,0 +1,36 @@
+// $green-text: #4abba8;
+// $background-color: #0a192f;
+// $webkit-text-fill-color: #8892b0;
+// $text-color: #ccd6f6;
+// $text-size: 1rem;
+// $text-line-height: 30px;
+
+$background-color: #FFF6E0;
+$green-text: #E15549;
+$webkit-text-fill-color: #482307;
+$text-color: #5C340F;
+$text-size: 1rem;
+$text-line-height: 30px;
+
+.footer{
+    color: $webkit-text-fill-color;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer label{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer span{
+    color: $green-text;
+}
+
+@media(max-width: 600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

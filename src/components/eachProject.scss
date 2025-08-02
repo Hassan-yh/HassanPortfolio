@@ -1,0 +1,120 @@
+// $green-text: #4abba8;
+// $secondary-background: #112240;
+// $background-color: #0a192f;
+// $webkit-text-fill-color: #8892b0;
+// $text-color: #ccd6f6;
+// $text-size: 1rem;
+// $text-line-height: 30px;
+
+// $secondary-background: #c29776;
+$secondary-background: rgb(219, 199, 184);
+$background-color: #FFF6E0;
+$green-text: #E15549;
+$webkit-text-fill-color: #482307;
+$text-color: #5C340F;
+$text-size: 1rem;
+$text-line-height: 30px;
+
+.pro-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 7rem;
+    transform: scale(0.8);
+    transition: all .5s;
+}
+
+.scale-up{
+    transform: scale(1);
+}
+
+.image-box{
+    height: 90%;
+    align-self: center;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.detail-box{
+    overflow-x: visible;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+}
+
+.title-info{
+    font-size: 13px;
+    color: $green-text;
+    margin-bottom: 10px;
+}
+
+.titles{
+    font-size: 24px;
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 1rem;
+}
+
+.detail{
+    padding: 2rem 1rem;
+    font-size: 15px;
+    width: 140%;
+    line-height: 25px;
+    color: $webkit-text-fill-color;
+    background-color: $secondary-background;
+    margin-bottom: 10px;
+    z-index: 999;
+}
+
+.tools{
+    font-size: 15px;
+    color: $webkit-text-fill-color;
+    margin-bottom: 10px;
+}
+
+.link-icon{
+    height: 21px;
+    width: 21px;
+}
+
+.switch{
+    .detail-box{
+        grid-column: 1;
+        grid-row: 1;
+        align-items: start;
+    }
+}
+
+@media(max-width:800px){
+    .pro-box{
+        grid-template-columns: 1fr;
+        position: relative;
+        gap: 3rem;
+    }
+
+    .image-box{
+        position: absolute;
+        height: inherit;
+        top: 0;
+        bottom: 0;
+        opacity: .2;
+    }
+
+
+    .detail-box{
+        align-items: start;
+        background:linear-gradient(to bottom, rgba(10, 25, 47, 0.88), rgba(10, 25, 47, 0.88)), inherit !important;
+        z-index: 1999;
+    }
+
+    .detail{
+        width: 100%;
+    }
+}
