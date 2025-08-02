@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import proImg from "../assets/b.png";
+import proImg from "../assets/b.jpg";
 import worldwise from "../assets/g.jpg";
 import toshnet from "../assets/toshnet.png";
 import EachProject from "../components/EachProject";
